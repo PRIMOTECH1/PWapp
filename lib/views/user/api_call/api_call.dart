@@ -11,6 +11,7 @@ Future<bool> postUserId({String? apiUrl, bool isAccountDelete = false}) async {
           body: jsonEncode({"user_id": sharedPreferences.getString("userID")}),
         )
         .timeout(const Duration(seconds: 10)); // Timeout after 10 seconds
+    debugPrint('object123 ${response.statusCode.toString()}');
 
     if (response.statusCode == 200) {
       final Map<String, dynamic> responseBody = jsonDecode(response.body);

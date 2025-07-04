@@ -14,7 +14,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   VersionResponse data = VersionResponse();
   bool canNavigateInside = false;
-  String version = "2.0.1";
+  String version = "2.0.3";
 
   @override
   void initState() {

@@ -198,7 +198,7 @@ class _WalletCard extends StatelessWidget {
             Expanded(
               flex: 2,
               child: CachedNetworkImage(
-                imageUrl: "${Api.baseImageUrl}${wallet.posterImage!}",
+                imageUrl: "${Api.baseImageUrl}${wallet.posterImage}",
                 placeholder: (context, url) => const Row(
                   children: [
                     SizedBox(
